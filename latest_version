@@ -1,0 +1,10 @@
+{
+  "latestVersion": "6.20",
+  "latestVersionCode": 4,
+  "url": "https://github.com/tribalfs/GalaxyMaxHzPub/releases",
+  "releaseNotes": [
+    "- Added real-time FPS option on top of real-time hz.",
+    "- Show persistent notification for real-time hz and fps to avoid process being killed by the system",
+    "- Bug fixes"
+  ]
+}
