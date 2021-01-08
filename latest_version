@@ -1,6 +1,6 @@
 {
-  "latestVersion": "6.26",
-  "latestVersionCode": 9,
-  "url": "https://github.com/tribalfs/GalaxyMaxHzPub/releases/download/v6.26/galaxy_max_hz_v6.26.apk",
+  "latestVersion": "6.21",
+  "latestVersionCode": 5,
+  "url": "https://github.com/tribalfs/GalaxyMaxHzPub/releases/download/v6.21/galaxy_max_hz_v6.21.apk",
   "releaseNotes": ["- Fixed autorun bug", "- Other minor improvements"]
 }
