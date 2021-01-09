@@ -1,6 +1,7 @@
 {
-  "latestVersion": "6.21",
-  "latestVersionCode": 5,
-  "url": "https://github.com/tribalfs/GalaxyMaxHzPub/releases/download/v6.21/app-xdaLab-release.apk",
-  "releaseNotes": ["- Fixed autorun bug", "- Other minor improvements"]
+  "latestVersion": "6.27",
+  "latestVersionCode": 10,
+  "url": "https://github.com/tribalfs/GalaxyMaxHzPub/releases/download/v6.27/galaxy_max_hz_v6.27.apk",
+  "releaseNotes": ["version 6.27", "- Fixed crashes on Galaxy Tab S7/S7+ when expanding notif panel", "- Fixed autorun bug (bug appeared in v6.25)", 
+  "- Fixed intermittent crashing when turning on refresh rate monitor (bug appeared in v6.25)", "- Stability improvement on change resolution feature"]
 }
