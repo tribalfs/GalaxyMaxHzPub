@@ -97,7 +97,7 @@ If your device is **rooted**, install and run the following mini-app to automate
 
  ```adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS```
 
- **Note that it's ```com.tribalfs.n20umaxhz``` if you are using the app version 5.40 or lower.**
+ **Note that it's ```adb shell pm grant com.tribalfs.n20umaxhz android.permission.WRITE_SECURE_SETTINGS``` if you are using the app version 5.40 or lower.**
 
 
 ![6](6.png)
