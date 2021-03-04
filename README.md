@@ -112,7 +112,7 @@ If your device is **rooted**, install and run the following mini-app to automate
 
  * Run `adb kill-server` from the terminal window.
 
-### 10. Done!
+### 10. Re-open the appp. Done! 
 
 **That's it!**
 
