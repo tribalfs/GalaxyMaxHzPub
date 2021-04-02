@@ -14,7 +14,7 @@ Alternative methods for **rooted** devices without using a PC:
 (2) Install this [mini-app](https://github.com/tribalfs/gmhWriteSecureSettings/releases), grant root permission and run.  
 
 
-Procedures to grant Galaxy Max Hz App WRITE_SECURE_PERMISSION using ADB:
+Procedures to grant Galaxy Max Hz App WRITE_SECURE_SETTINGS permission using ADB:
 ----------------------
 
 ### 1. Enable developer mode
