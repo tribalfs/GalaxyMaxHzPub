@@ -1,17 +1,17 @@
 # Galaxy Max Hz
 
-For **unrooted** device, the following features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in order to work:
-* Resolution & Motion Smoothness Toggle
-* Switch between **Adaptive** or **High** Motion Smoothness mode for supported devices
-
-If your device is **rooted**, install and run the following mini-app to automate granting of **WRITE_SECURE_SETTINGS** permission to Galaxy Max Hz without the need of a PC.  You can uninstall the mini-app after:
-* [[Root]Write Secure for Galaxy Max Hz before v6.0](https://mega.nz/file/KdRFxYzQ#kKAW9U5avxtIpENfU2gFrC5WWW7jYfDr11VoAdTSoGY)
-* [[Root]Write Secure for Galaxy Max Hz v6.0 and above](https://mega.nz/file/CNZCnBDR#Ugw0vkIf281EytWDSA3lL1pyGUuIWzOR4iFnbavueGk)
+Some features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in order to work. For additional details, you can check the [app's official xda-developers thread](https://forum.xda-developers.com/t/app-galaxy-max-hz-refresh-rate-control-quick-resolution-switcher-screen-off-mods-adaptive-mod-keep-high-adaptive-on-power-saving-mode-and-more.4181447/).
 
 ----------------------
 ### TL;DR
 
  * Run `adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
+
+----------------------
+
+If your device is **rooted**, you can grant the WRITE_SECURE_SETTINGS without the need of a PC.  Install any terminal emulator app from play store and run the above adb command as root(i.e. run the `su` command first)
+
+For  **non-rooted devices**, do the following procedures:
 
 ----------------------
 
