@@ -9,7 +9,7 @@ Some features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in orde
 
 ----------------------
 
-If your device is **rooted**, you can grant the WRITE_SECURE_SETTINGS without the need of a PC.  Install any terminal emulator app from play store and run the above adb command as root(i.e. run the `su` command first)
+If your device is **rooted**, you can grant the WRITE_SECURE_SETTINGS without the need of a PC.  Install any terminal emulator app from play store (e.g. [Termux](https://play.google.com/store/apps/details?id=com.termux)) and run the above adb command as root(i.e. run the `su` command first)
 
 For  **non-rooted devices**, do the following procedures:
 
