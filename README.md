@@ -16,7 +16,7 @@ For **rooted** devices without using a PC:
 (2) Install this [mini-app](https://github.com/tribalfs/gmhWriteSecureSettings/releases), grant root permission and run.
 
 For **non-rooted** devices without using a PC:
-(1) Install [LADB Free](https://play.google.com/store/apps/details?id=com.draco.ladb.free&hl=en&gl=US)/[LADB Paid](https://play.google.com/store/apps/details?id=com.draco.ladb) from play store. Follow LADB setup instructions. Once LADB setup is done, execute `adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
+(1) Install [LADB Free](https://play.google.com/store/apps/details?id=com.draco.ladb.free&hl=en&gl=US)/[LADB Paid](https://play.google.com/store/apps/details?id=com.draco.ladb) from play store. Follow LADB setup instructions. Once LADB setup is done, execute `pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
 
 ----------------------
 
