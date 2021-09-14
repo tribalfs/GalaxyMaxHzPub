@@ -19,3 +19,5 @@
 7-day Premium Trial is available. Just click "Activate Premium|Trial" button and activate free trial when prompted.
 
 Note: The premium license is on a per device basis.
+
+***these marked features require a one-time ADB setup (this is not root)
