@@ -1,0 +1,354 @@
+<div class="bbWrapper"><h3><b>FAQs:</b>&ZeroWidthSpace;</h3><div class="bbTable">
+<table style="width: 100%"><tbody><tr><td><ul>
+<li data-xf-list-type="ul"><b>Appear on top notification for GMH can not be disabled on OneUI4.0</b><br>
+I think this a bug on OneUI4.0. Also occurs to other apps. Workaround is to disable appear on top notification for ALL apps (i.e. long-click on the notification and switch off "All Notifications" instead of the app")<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>Why this app requires Accessibility Service permission?</b><br>
+The general reason is that it's for better stability of some features requiring background service but it is not required if you are not using those - you can turn it off. This is most specially needed when you set min hz to lower than 60hz in adaptive mode to override samsung's implementation which use 60hz min hz as default (see <b>How the Adaptive refresh rate mod works? </b>section below<b>)</b>.<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>I am on adaptive or high refresh rate mode, but why my refresh rate stays at 60hz on google maps, waze and some other apps and games even if I set a higher max refresh rate?</b><br>
+These apps are either (1) blacklisted by the android system to not use the high refresh rates due to compatibility reasons, (2) sets its own preferred refresh rate or (2) controlled by Samsung's game optimizing service (game launcher). GMH app can't force these apps to use high refresh rates.<br>
+<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>How does Quick-Doze Mod work?</b><br>
+If enabled, the device will quickly enter into doze mode (except when charging) while screen is OFF. This will make a better standby power consumption. Motion detection will not interrupt this doze mod. While in doze, the device periodically enters a maintenance window (MW), during which apps can complete pending work (syncs, jobs, etc.). The device will continue this cycle, doubling the length MW interval each time. The longer the MW interval, the better the battery saving.<br>
+<br>
+Doze mode may cause notification delays on some apps. It will not affect SMS, High Priority FCM and apps which battery optimizations are disabled.<br>
+<br>
+Doze mode will deactivate once the device is unlocked.<br>
+<br>
+<span style="color: rgb(226, 80, 65)">Caution: Ensure to disable Doze Mods from other apps (if you have it) when enabling this feature in GMH to avoid conflict or clash .</span></li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Why I don't have 48hz and/or 96hz on my device?</b><br>
+Availability of certain refresh rates is dependent on hardware support and must also be enabled by manufacturer in the system.<br>
+<br>
+Currently only the following Samsung devices have 48Hz and/or 96hz enabled:<ul>
+<li data-xf-list-type="ul">Note 20 Ultra (48 &amp; 96)</li>
+<li data-xf-list-type="ul">S21 Series (48 &amp; 96)</li>
+<li data-xf-list-type="ul">S20 series excluding FE (48 &amp; 96 -<span style="color: rgb(247, 218, 100)"> but 48hz was removed by Samsung in OneUI3.1 update on some models)</span></li>
+<li data-xf-list-type="ul">Z Flip3</li>
+<li data-xf-list-type="ul">Z Fold 3</li>
+</ul></li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>How the Adaptive refresh rate mod works? </b><br>
+For those devices that do NOT have the Samsung's native Adaptive refresh rate mode, GMH's own Adaptive Mod is applied.<br>
+<br>
+For those devices which already support Samsung's native adaptive refresh rate, the native adaptive refresh rate is applied 'AS IS' (meaning controlled by the samsung's implementation) even if you you changed the max/peak refresh rate. An exception is when you set/force the minimum refresh for adaptive to lower than 60Hz (e.g. 48hz) - in this case, GMH own adaptive mod implementation is applied. .<br>
+<br>
+GMH Adaptive mod not only detects touches but also the changes on the contents being displayed on screen similar to Samsung's native adaptive implementation. It is a goal of this app to make the Adaptive mod behavior similar to the native one.<br>
+<br>
+Some users experienced flickers when refresh rate switches more specifically under low brightness conditions and specially when using 96hz and/or 48hz. This an issue of consistency of gamma curves across the different refresh rates, a display calibration issue and our eyes are more sensitive to it on darker environment. This varies on how finely the manufacturer calibrated the display. It's an issue that GMH can't solve directly. However, you can use GMH minimum brightness threshold for adaptive mod in the app to automatically pause GMH adaptive mod behavior when screen brightness falls below the set brightness threshold.<br>
+<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>In Adaptive refresh rate mod, I set minimum refresh rate to 48Hz but while watching videos, refresh rate only goes down to 60Hz</b><br>
+On video apps like youtube, the default refresh rate is set to 60Hz but it will automatically go down to 48Hz on compatible videos (i.e 24fps or 48fps videos). Most videos in youtube are in 60fps format.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Adaptive mod does not go down on GAMES.</b><br>
+On games, the refresh rate will be set to the highest refresh rate the game supports and will be fixed on that refresh rate. This is to preserve input responsiveness and smoothness while playing. If the game is not compatible to the currently set max Hz, it will use the next lower compatible refresh rate.<br>
+<br>
+Important Notes:<ul>
+<li data-xf-list-type="ul">When you are using "Priority Mode" in Game Launcher, you should add GMH to the <u>excluded list</u> in order to keep it's background service from being killed when opening a game. Not adding GMH to this list can cause refresh rates to drop to minimum hz and behave abnormally while gaming.<br>
+<br>
+</li>
+<li data-xf-list-type="ul">If you are using a third party overlay app that launches when a game is opened (e.g. game monitoring/performance apps), it may cause issue on GMH's game detection that causes refresh rate to not being fixed. If you are experiencing such, please let me know the overlay app that you are using so I can add it in the ignore list.</li>
+</ul></li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Can I disable appear on top permission if I don't use the app's refresh rate monitor overlay?</b><br>
+Not recommended. Disabling it may introduce issues on GMH's Adaptive mod. It's recommended to keep it enabled and just hide its notification by long-pressing on it in the notification panel and switching it off.<br>
+<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>Can I add the CQHD+(custom QHD) resolution that supports 96hz/120hz for Note20 Ultra or S20 series device?</b><br>
+Yes, this option is added as requested by some users. If it's not shown in the app, just click the "Reload Profile" in the 3-dot menu while connected to the internet to load profiles from my backend containing such resolution. The backend copies of the <i>resolution and refresh profiles </i>have the following additional resolution:<ul>
+<li data-xf-list-type="ul">Note 20 Ultra: 3087x1439 @ 48/60/96/120 hz</li>
+<li data-xf-list-type="ul">S20/S20+/S20Ultra: 3180x1431 @ 60/96/120 hz<br>
+<br>
+<span style="color: rgb(184, 49, 47)"><span style="font-family: 'arial'"><b>Caution!! Since OneUI4.0, CQHD causes display to shrink after reboot or long sleep that causes difficulty on unlocking the device.</b></span></span></li>
+</ul></li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>I enabled Power Saving Mode on Screen-off and the Always on Display (AOD) stopped working?</b><br>
+Disable "Turn-off Always on Display" option in your device's Power Saving Mode settings.<br>
+Note: You can use this setting to confirm that PSM on Screen Off is working. AOD turn off after 6-10 seconds.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Refresh Rate freezes after a long idle while using adative mod </b><br>
+Ensure that you allow background activities on GMH or allow it's ignore battery optimization requedt. If still persist, you can try adding it to never sleeping apps. If you are using Priority Mode in Game Launcher, add GMH to the excluded list.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>I constantly receive sound/vibration alerts everytime real-time refresh and/or netspeed indicator is turned-on. How can I turn it off?</b><br>
+In case you're experiencing this, you can turn this off in the app's notification settings (long press app icon &gt; app info &gt; notifications &gt; open each notif category and set to silent). This is fixed since v6.62.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>How to setup GMH with </b><a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener"><b>Tasker</b></a><b>?</b><ol>
+<li data-xf-list-type="ol"><b>Create(+) a Task  </b>-<b> i</b>nside Tasker's <i>TASKS</i> tab and give it a name. Inside the <i>Task</i> <i>Edit </i>window, add <i>GMH Action</i> by clicking <b>(+)</b> button &gt; Plugin &gt; Galaxy Max Hz. Inside <i>Action Edit</i> window, expand Configuration section to see the tasker settings/variables available for GMH.<br>
+<br>
+Go back to <i>Task Edit</i> window and set a value to each of the variable that you want to use by clicking <b>(+)</b> button &gt; Variables &gt;Variable Set &gt; enter the variable name and a corresponding valid value. Ensure to put <i>GMH action</i> AFTER all the <i>Variable Set </i>actions (Tip: Use hold and drag to re-order).<br>
+<br>
+You can test the task you created by clicking the <img class="smilie smilie--emoji" loading="lazy" alt="▶️" title="Play button    :arrow_forward:" src="https://cdn.jsdelivr.net/joypixels/assets/6.6/png/unicode/64/25b6.png" data-shortname=":arrow_forward:"> button at the bottom.<br>
+<br>
+You can create multiple <i>GMH tasks</i> with different variables.<br>
+<br>
+<br>
+</li>
+<li data-xf-list-type="ol"><b>Create a Profile(Trigger) </b>- in Tasker's <i>PROFILES</i> tab for the trigger that you want to use then link it to the task that you created in step 1.<br>
+<br>
+Tip: If you want to override behavior for certain apps, just create an <b>Application-Activity Profile(Trigger)</b> for each of these apps in Tasker's <i>Profile</i> tab, then create the corresponding <i>GMH tasks (1 enter task and 1 exit tasks) </i>following step 1 above and link them to the corresponding <b>Application-Activity Profile(Trigger). </b>To link the <i>GMH exit task</i>, just long press the linked <i>GMH enter task</i> and press "Add Exit Task" in the options that will show.<br>
+<br>
+e.g.<br>
+<div class="bbImageWrapper  js-lbImage" title="Screenshot_20220121-195651_Tasker.jpg" data-src="https://forum.xda-developers.com/attachments/screenshot_20220121-195651_tasker-jpg.5519495/" data-lb-sidebar-href="" data-lb-caption-extra-html="" data-single-image="1" data-fancybox="lb-post-83785135" data-caption="<h4>Screenshot_20220121-195651_Tasker.jpg</h4><p><a href=&quot;https:&amp;#x2F;&amp;#x2F;forum.xda-developers.com&amp;#x2F;t&amp;#x2F;app-galaxy-max-hz-refresh-rate-mods-screen-off-mods-qs-tiles-tasker-support-and-more.4181447&amp;#x2F;#post-83785135&quot; class=&quot;js-lightboxCloser&quot;>tribalfs · Oct 25, 2020 at 9:57 AM</a></p>" style="cursor: pointer;">
+<img src="https://forum.xda-developers.com/attachments/screenshot_20220121-195651_tasker-jpg.5519495/" data-url="" class="bbImage" data-zoom-target="1" style="width: 167px" alt="Screenshot_20220121-195651_Tasker.jpg" title="Screenshot_20220121-195651_Tasker.jpg" width="1080" height="672" loading="lazy">
+</div><div class="bbImageWrapper  js-lbImage" title="Screenshot_20220121-195737_Tasker.jpg" data-src="https://forum.xda-developers.com/attachments/screenshot_20220121-195737_tasker-jpg.5519497/" data-lb-sidebar-href="" data-lb-caption-extra-html="" data-single-image="1" data-fancybox="lb-post-83785135" data-caption="<h4>Screenshot_20220121-195737_Tasker.jpg</h4><p><a href=&quot;https:&amp;#x2F;&amp;#x2F;forum.xda-developers.com&amp;#x2F;t&amp;#x2F;app-galaxy-max-hz-refresh-rate-mods-screen-off-mods-qs-tiles-tasker-support-and-more.4181447&amp;#x2F;#post-83785135&quot; class=&quot;js-lightboxCloser&quot;>tribalfs · Oct 25, 2020 at 9:57 AM</a></p>" style="cursor: pointer;">
+<img src="https://forum.xda-developers.com/attachments/screenshot_20220121-195737_tasker-jpg.5519497/" data-url="" class="bbImage" data-zoom-target="1" style="width: 185px" alt="Screenshot_20220121-195737_Tasker.jpg" title="Screenshot_20220121-195737_Tasker.jpg" width="1080" height="531" loading="lazy">
+</div><div class="bbImageWrapper  js-lbImage" title="Screenshot_20220121-195715_Tasker.jpg" data-src="https://forum.xda-developers.com/attachments/screenshot_20220121-195715_tasker-jpg.5519499/" data-lb-sidebar-href="" data-lb-caption-extra-html="" data-single-image="1" data-fancybox="lb-post-83785135" data-caption="<h4>Screenshot_20220121-195715_Tasker.jpg</h4><p><a href=&quot;https:&amp;#x2F;&amp;#x2F;forum.xda-developers.com&amp;#x2F;t&amp;#x2F;app-galaxy-max-hz-refresh-rate-mods-screen-off-mods-qs-tiles-tasker-support-and-more.4181447&amp;#x2F;#post-83785135&quot; class=&quot;js-lightboxCloser&quot;>tribalfs · Oct 25, 2020 at 9:57 AM</a></p>" style="cursor: pointer;">
+<img src="https://forum.xda-developers.com/attachments/screenshot_20220121-195715_tasker-jpg.5519499/" data-url="" class="bbImage" data-zoom-target="1" style="width: 168px" alt="Screenshot_20220121-195715_Tasker.jpg" title="Screenshot_20220121-195715_Tasker.jpg" width="1080" height="661" loading="lazy">
+</div></li>
+</ol></li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>If I uninstall the app, will it restore the phone to its stock settings. </b><br>
+Yes, just set back the max hz to the default one and disable all screen off mods before uninstalling.</li>
+</ul><br>
+<br>
+<ul>
+<li data-xf-list-type="ul"><b>Why is it that when I enable Auto SENSORS OFF, the notification panels gets expanded very quickly every time I unlock the device ?</b><br>
+Since the api behind android's SENSORS OFF feature is highly restricted and inaccessible by 3rd party on stock roms, GMH's Auto SENSORS OFF option is implemented using touch simulations on the Sensors Off tile which require the notification panel to be expanded when switching this tile on and off. Thus, requiring to put the SENSORS OFF tile within the first 4 positions.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Can you make Auto SENSORS OFF deactivate when the screen turns on instead of device unlock so that it deactivates immediately when receiving calls?</b><br>
+Unfortunately not possible on stock. This android feature is restricted not to be turned-off with locked screen.<b><br>
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/refs/heads/android11-release/src/com/android/settings/development/qstile/DevelopmentTiles.java" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener">
+<div class="bbCodeSpoiler">
+<button type="button" class="bbCodeSpoiler-button button rippleButton" data-xf-click="toggle" data-xf-init="tooltip" data-original-title="Click to reveal or hide spoiler" id="js-XFUniqueId26"><span class="button-text">
+<span>Spoiler</span>
+</span></button>
+<div class="bbCodeSpoiler-content">
+<div class="bbCodeBlock bbCodeBlock--spoiler">
+<div class="bbCodeBlock-content">
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+<div class="bbCodeBlock-title">
+Code:
+</div>
+<div class="bbCodeBlock-content" dir="ltr">
+<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang=""><code>@Override
+                                                   public void setIsEnabled(boolean isEnabled) {
+                                                       // Don't allow sensors to be reenabled from the lock screen.
+                                                       if (mIsEnabled &amp;&amp; mKeyguardManager.isKeyguardLocked()) {
+                                                           return;
+                                                       }
+                                                       mMetricsFeatureProvider.action(getApplicationContext(), SettingsEnums.QS_SENSOR_PRIVACY,
+                                                               isEnabled);
+                                                       mIsEnabled = isEnabled;
+                                                       mSensorPrivacyManager.setSensorPrivacy(isEnabled);
+ }</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</div></a></b><br>
+</li>
+<li data-xf-list-type="ul"><b>How to activate premium free trial?</b><br>
+Click the 'Activate Premium | Trial' button and it will prompt automatically to activate trial if still available on your device. Just click ok.</li>
+</ul><br>
+<ul>
+<li data-xf-list-type="ul"><b>Why is it that we can't download this app in play store and how do we know it's safe?</b><br>
+This app targets older android sdk in order to set refresh rates without ADB or root requirement. Unfortunately, play store doesn't anymore allow us to publish app targeting such older sdk. If you doubt if it's safe, you can scan it with any virus scanner like <a href="http://www.virustotal.com/" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener">virustotal</a>, <a href="http://www.metadefender.opswat.com/" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener">metadefender</a>, with Samsung's built-in threat scanner powered by McAfee or Google Play Protect scanner.<br>
+<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><b>I have a rooted device with modified device model number, will it work?</b><br>
+It may cause issue as refresh rate profiles are loaded based on the device model number.<br>
+<br>
+</li>
+<li data-xf-list-type="ul"><span style="color: rgb(255, 255, 255)"><span style="font-family: 'trebuchet ms'">Paypal is restricted in my location, can I get GMH Premium features using Google Play Store?<br>
+Yes, just download <a href="https://play.google.com/store/apps/details?id=com.tribalfs.gmh_donate" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener"><b>GMH Donation app</b></a> from Google Play Store.<br>
+<a href="https://play.google.com/store/apps/details?id=com.tribalfs.gmh_donate" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener">
+<img src="/proxy.php?image=https%3A%2F%2Fwww.gstatic.com%2Fandroid%2Fmarket_images%2Fweb%2Fplay_prism_hlock_2x.png&amp;hash=04353ed0c34516c3b0d8dc22fa6f16e4" data-url="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" class="bbImage " loading="lazy" style="width: 185px" width="" height="">
+</a> </span></span></li>
+</ul></td></tr><tr><td></td></tr></tbody></table>
+</div><br>
+<br>
+<h3><b>Questions and Bug Reports:</b>&ZeroWidthSpace;</h3><div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>Feel free to ask questions relevant to this app here but ensure to read the FAQs first before doing so.<br>
+<br>
+For suspected bugs, you can post it here (or send me a direct message). Read the FAQs also to check if it is an intended/expected behavior or not. Also check if the latest version is already installed in your device. Please include complete your complete device model number(should not be modified), android version, stock or modded rom, GMH version number and the issue/bug you are reporting and the steps/scenarios how to reproduce it. Support maybe limited on modded roms.<br>
+<br>
+It some cases I maybe need to see a screenshot of your GMH settings and/or screen recording* showing the bug/issue. You can use this <a href="https://play.google.com/store/apps/details?id=us.rec.screen" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener">screen recording app </a> capable of screen recording at high refresh rates<br>
+<br>
+If GMH crashes on your device, please send me the crashlog of your device. Just execute the following adb command (do this after the crash):<br>
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+<div class="bbCodeBlock-title">
+Code:
+</div>
+<div class="bbCodeBlock-content" dir="ltr">
+<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang=""><code>adb logcat -b crash &gt; crashlog.txt</code></pre>
+</div>
+</div>Ctrl+C after 15seconds.<br>
+Then locate crashlog.txt file in your adb installation folder then send it to me. In most cases the culprit can be identified and addressed using this file. Otherwise, I may send a you specially build apk to get the full stacktrace.</td></tr></tbody></table>
+</div><h3>&ZeroWidthSpace;</h3><h3><b>Warranty:</b>&ZeroWidthSpace;</h3><div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>Due to the app usage of non-sdk and non-public api to execute most of its features, it is not guaranteed that all of its features are going to work in the future android iterations, should the new iteration block/disable them. But this will not be left without any effort of finding a workaround.</td></tr></tbody></table>
+</div><h3>&ZeroWidthSpace;</h3><h3>&ZeroWidthSpace;</h3><h3><b>Sharing Outside XDA:</b>&ZeroWidthSpace;</h3><div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>Feel free to share this app anywhere as long as proper credits and reference to this thread are provided. Do not create any alternative download link. This is to ensure that users get the untampered installation file, latest information and latest updates of this app.</td></tr></tbody></table>
+</div><br>
+<br>
+<h3><b>Changelogs:</b>&ZeroWidthSpace;</h3><div class="bbcode-hide" style="margin:20px; margin-top:5px">
+<input type="button" value="Click To Show Content" style="font-size:12px; padding:5px; display:block; margin:0; width:175px; cursor:pointer; text-align:center; text-transform:uppercase;" onclick="if (this.parentNode.getElementsByTagName('div')[0].style.display != '') { this.parentNode.getElementsByTagName('div')[0].style.display = ''; this.value='Click To Hide Content'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value='Click To Show Content'; }">
+<div style="display: none;">
+<br>
+<i>Try to clear data of this app if you encounter issues after update. Please report any bug that persist. Thank you.<br>
+<br>
+<b>Please check </b></i><a href="https://github.com/tribalfs/GalaxyMaxHzPub/releases/" target="_blank" class="link link--external" rel="ugc nofollow ugc noopener"><i><b>here </b></i></a><i><b>for the latest changelogs</b><br>
+<br>
+v7.14</i><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>Added <b>Auto SENSORS OFF</b> (experimental non-root workaround): Device sensors will automatically turn off while screen is off until the device is unlocked. With tasker support so you can enable and disable this setting on the conditions you set.</td></tr><tr><td>v7.14.10<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>-48hz on force lowest on screen off/AOD now works on S20/+/Ultra on any refresh rate mode</td></tr><tr><td>-improvements on brightness threshold for adaptive mod (anti-flicker)</td></tr><tr><td>-added quick settings tille to toggle min hz for adaptive mod on supported devices</td></tr><tr><td>-added tasker option to toggle min hz for adaptive mod on supported devices</td></tr><tr><td>-other fixes</td></tr></tbody></table>
+</div></td></tr></tbody></table>
+</div><br>
+<br>
+v7.13<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>Anti-flicker: added minimum brightness threshold for Adaptive mod similar to the native one. When the device's display brightness falls below the set minimum brightness threshold, adaptive mod will pause and will resume once the brightness increases again above the threshold. This is for devices that are experiencing flickers when refresh rate switches at certain low brightness level.</td></tr><tr><td>Stability and bug fixes</td></tr></tbody></table>
+</div><br>
+<br>
+v7.12<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- More customizable maintenance window interval for Quick-Doze Mode</td></tr></tbody></table>
+</div><br>
+v7.11<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Added turn-off autosync option under screen-off mods</td></tr></tbody></table>
+</div><br>
+v7.10<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Separate max hz settings for power saving mode</td></tr><tr><td>- Automate GMH settings using Tasker plugin support. Supported actions/variables: Max Refresh Rate, Keep Motion Smoothness on PSM, Motion Smoothness Mode, Quick-doze Mod, Change Screen Resolution.</td></tr><tr><td>- Some code refactoring and optimizations</td></tr></tbody></table>
+</div><br>
+<br>
+<i>v7.00</i><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- `Keep motion smoothness on power saving mode` will now take effect immediately after toggle</td></tr><tr><td>- Filter what resolutions to include in the screen resolution switcher</td></tr><tr><td>- Power saving mode and deep-doze are now separate options under screen-off mods</td></tr><tr><td>- Adaptive or high motion smoothness on CQHD+ resolution now sticks after reboot.</td></tr><tr><td>'-Adjustments on doze mode to prevent it from being interrupted by significant motion. This should improve doze performance when the device is constantly in pocket or in motion.</td></tr><tr><td>- Additional doze option with no maintenance window added</td></tr></tbody></table>
+</div><br>
+<br>
+v6.64<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Added option to keep motion smoothness on power saving mode - either enabled manually or by the system/adaptive power saving</td></tr></tbody></table>
+</div><br>
+v6.63<br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Trial workaround to prevent Samsung Pay crash (v6.63.50)</td></tr><tr><td>- Other minor bug fixes</td></tr></tbody></table>
+</div><div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Quick power-doze mod adjustments for more power saving on idle. There are now two options available: Moderate and Aggressive</td></tr><tr><td>- Adaptive mod improvements - fixed behavior in Samsung notes and when using instagram voice note</td></tr><tr><td>- Added option to hide Net Speed in the app's main screen to those who don't need it.</td></tr></tbody></table>
+</div><br>
+<b>v6.62</b><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Fixed crash when opening some apps in Secured Folder</td></tr><tr><td>- Minor improvements on adaptive mod</td></tr><tr><td>- Fixed intermittent bug on restoring power mode settings on screen-on when using quick power-doze mod</td></tr><tr><td>- Fixed bug on refresh rate profiles not properly loading on some devices. Known profiles are now being loaded from the server if connected to internet or locally from profiles included in the apk - upon first opening the app or after clear data.</td></tr><tr><td>- Adaptive mod improvements for games and video payback</td></tr><tr><td>- Other bug fixes</td></tr><tr><td>- Improvements on Italian translations</td></tr><tr><td>- Please advise if not all refresh rates are working on your device so I can modify the profile in my server</td></tr><tr><td>Clearing app data is recommended if your device has issue on loading refresh rate profiles</td></tr></tbody></table>
+</div><br>
+<br>
+<b>v6.61</b><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Improvements on adaptive mod behavior for multi-refresh rates devices not natively supporting adaptive refresh rates (fixed issues on prolonged scroll, mouse scroll, not working on settings, etc.)</td></tr><tr><td>- Set minimum refresh rate for adaptive mode to 60hz or lower (if available)</td></tr><tr><td>- Net speed indicator now autohides when not connected to internet</td></tr><tr><td>- More optimizations</td></tr><tr><td>- Other improvements and bug fixes</td></tr></tbody></table>
+</div><br>
+<b>v6.60</b><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Experimental Adaptive refresh rate mod working for Samsung devices supporting multiple refresh rates (e.g. S20/S20+/S20Ultra,S20FE) (only available for Ad-free)</td></tr><tr><td>- Quick power-doze mod: Automatic power saving mode and quick doze mode on screen-off (only available for Ad-free)</td></tr></tbody></table>
+</div><br>
+<br>
+<b>v6.50</b><br>
+<div class="bbTable">
+<table style="width: 100%"><tbody><tr><td>- Fixed high mode not working on some S21/N20U devices</td></tr><tr><td>- Show real-time refresh rate in notification and/or overlay</td></tr><tr><td>- Added some language support</td></tr><tr><td>- Improve notifications</td></tr><tr><td>- App power consumption improvement</td></tr><tr><td>- 7-day ad-free trial is available for you to test. Just click "Activate Ad-free" button and click "More info" on the snackbar prompt that will appear Ad-free trial added</td></tr><tr><td>- Stability and other improvements</td></tr></tbody></table>
+</div><br>
+<b>v6.33</b><br>
+<ul>
+<li data-xf-list-type="ul">Code cleanup and minor bug fixes</li>
+<li data-xf-list-type="ul">Removed FPS counter (not so useful)</li>
+<li data-xf-list-type="ul">Added net speed indicator (extra for ad-free)</li>
+</ul><b>v6.31</b><br>
+<ul>
+<li data-xf-list-type="ul">Fixed max hz button label not correctly updating after screen off</li>
+<li data-xf-list-type="ul">Fixed intermittent crash when service is killed by the system on some devices</li>
+<li data-xf-list-type="ul">Updated ad-free activation for devices and those who have ad-free version of the old app package - now using activation code</li>
+</ul><br>
+<b>v6.27</b><br>
+<ul>
+<li data-xf-list-type="ul">Fixed crashes on Galaxy Tab S7/S7+ when expanding notif panel</li>
+<li data-xf-list-type="ul">Fixed autorun bug</li>
+<li data-xf-list-type="ul">Stability improvement on quick resolution changer feature</li>
+</ul><br>
+<b>v6.21</b><br>
+<ul>
+<li data-xf-list-type="ul">Added real-time Display FPS option alongside refresh rate.</li>
+<li data-xf-list-type="ul">Run service in foreground so it will less likely be killed by the system.</li>
+<li data-xf-list-type="ul">Added in-app updater</li>
+</ul><br>
+<b>v6.00</b><br>
+Made a number of changes<br>
+<ul>
+<li data-xf-list-type="ul">Max Refresh Rate Toggle<ul>
+<li data-xf-list-type="ul">Added ability to switch to the lowest available refresh rate from the predefined system refresh rates (e.g. 48hz for Note20 ultra at Adaptive)</li>
+<li data-xf-list-type="ul">Control the lower limit (hz) of this toggle. Choose whether to include or exclude the lower 48hz and/or 60hz in the toggle.</li>
+</ul></li>
+<li data-xf-list-type="ul">Real-time Refresh Rate<ul>
+<li data-xf-list-type="ul">Added ability to customize the location and the size of the real-time refresh rate overlay</li>
+<li data-xf-list-type="ul">When turned-on, it will automatically pause when the screen is Off to reduce background power consumption</li>
+</ul></li>
+<li data-xf-list-type="ul">Screen Off Refresh Rate<ul>
+<li data-xf-list-type="ul">Show screen off refresh rate</li>
+<li data-xf-list-type="ul">Screen Off Refresh Mod - enable this to automatically set the refresh rate to the lowest available refresh rate on screen OFF. (This overrides <a href="https://forum.xda-developers.com/t/weird-refresh-rate-behavior-on-screen-off.4196203/" class="link link--internal">Samsung's strange stock behavior which sets the refresh rate to the highest on screen off</a>). This will improve standby power consumption a bit.</li>
+</ul></li>
+<li data-xf-list-type="ul">Others<ul>
+<li data-xf-list-type="ul">Updated app layout</li>
+<li data-xf-list-type="ul">Show information of the device's supported screen resolutions and the corresponding supported refresh rates</li>
+</ul></li>
+<li data-xf-list-type="ul">Package name change - the package name was changed from <u>com.tribalfs.n20umaxhz</u> to<u> com.tribalfs.gmh</u><ul>
+<li data-xf-list-type="ul"><b><span style="color: rgb(250, 197, 28)">To those who purchased the ad-free license of the previous app package, you can freely upgrade to the ad-free version of this new app. Just enter the activation code sent to your email once prompted by the app. You can do the same to reacquire license if you reformatted your phone. Thank you for supporting this app.<b><img class="smilie smilie--emoji" loading="lazy" alt="🙏" title="Folded hands    :pray:" src="https://cdn.jsdelivr.net/joypixels/assets/6.6/png/unicode/64/1f64f.png" data-shortname=":pray:"></b></span></b></li>
+</ul></li>
+</ul>Previous changelogs<br>
+<div class="bbcode-hide" style="margin:20px; margin-top:5px">
+<input type="button" value="Click To Show Content" style="font-size:12px; padding:5px; display:block; margin:0; width:175px; cursor:pointer; text-align:center; text-transform:uppercase;" onclick="if (this.parentNode.getElementsByTagName('div')[0].style.display != '') { this.parentNode.getElementsByTagName('div')[0].style.display = ''; this.value='Click To Hide Content'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value='Click To Show Content'; }">
+<div style="display: none;">
+<br>
+v5.40<br>
+- Fixed landscape orientation layout bug and other layout improvements<br>
+- Added support for Note 20 Ultra Non-5G models (all features)<br>
+<br>
+v5.26<br>
+- Fixed disabled "High/Fixed Motion Smoothness Mode" switcher on Galaxy Z Fold 2. You should be able to use this function now in Z Fold 2.<br>
+- Fixed force close bug on Galaxy Z Fold 2<br>
+-Fixed missing resolution label for Galaxy S20 series<br>
+- Other code clean up<br>
+<br>
+v5.20<br>
+- Qs tiles for refresh rate control and resolution switcher now have dynamic icons. Better visibility for partially expanded notification panel.<br>
+- Added high/fixed refresh rate mode/option for Galaxy Note20 Ultra and Z Fold2. If enabled, the device will be set to 'High Motion Smoothness' mode and refresh rates will behave like the Galaxy S20 series.<br>
+<br>
+v5.00<br>
+- Added support for Galaxy S20, S20+, S20 Ultra and S20FE. Resolution switcher is not applicable to S20 FE.<br>
+- Renamed app to <b>Galaxy Max Hz</b><br>
+<br>
+v4.00<br>
+-Added 'Resolution - Motion Smoothness Mode' switcher (button and qs tile). Switch resolution and motion smoothness mode anytime even on medium power saving mode. This specific function requires ADB.<br>
+<br>
+v3.00<br>
+- Changed overlay FPS to Refresh Rate (Hz)<br>
+- Refresh rate monitor now switches color to red if 60hz or below and to green if above 60hz<br>
+- Added toggle switch for refresh rate monitor on app's home screen<br>
+<br>
+v2.00<br>
+- The 3-way toggle button and quicksettings (qs) tile are now aware if the current Motion Smoothness mode is set to Adaptive or not. If not, they will show 'Standard' and will open the display settings when clicked<br>
+- The switch for the FPS monitor overlay is moved to a new qs tile. You can now turn the FPS monitor ON/OFF anywhere without opening the app.<br>
+- Changed text color of fps monitor from red to green. Green color has the longest lifespan in amoled, so lesser chance of amoled burn.<br>
+<br>
+v1.00 Initial release<br>
+</div>
+</div><br>
+</div>
+</div></div>
