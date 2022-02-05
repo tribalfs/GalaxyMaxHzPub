@@ -51,7 +51,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
 #### For Windows: Open up CMD
   
- * Type `cmd` in the address bar and press enter. 
+ * Type `cmd` in the address bar and press enter.  This will open Windows Command Prompt.
 
 ![1](1.png)
 
