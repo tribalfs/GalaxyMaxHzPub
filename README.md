@@ -53,7 +53,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
   
  * Type `cmd` in the address bar and press enter.  This will open Windows Command Prompt.
 
-![1](1.png)
+![opening_cmd](opening_cmd.png)
 
 #### For MacOS: Open up Terminal
 
@@ -74,6 +74,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
  * Check the connection by entering the following command followed by an enter. It should show your device ID if successfully connected.
 
  ```adb devices```
+ 
  ![6](adb-devices.png)
  
  
