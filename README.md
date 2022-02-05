@@ -44,7 +44,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
     
  * Extract the downloaded zip file.
 
-### 4. Navigate inside the platform-tools folder that you extracted on Windows Explorer or Finder(macOS)
+### 4. Navigate inside the `platform-tools` folder that you extracted on Windows Explorer or Finder(macOS)
 
 
 ### 5. Opening the command-line interface
