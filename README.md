@@ -77,7 +77,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  ```adb devices```
  
- ![6](adb-devices.png)
+ ![adb_devices](adb_devices.png)
  
  
 ### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
@@ -86,7 +86,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  ```adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS```
 
-![6](6.png)
+![write_secure_settings](write_secure_settings.png)
 
 
 ### 8. You may now disable the USB debugging settings
