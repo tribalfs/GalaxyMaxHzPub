@@ -23,7 +23,7 @@ For **non-rooted** devices using [LADB](https://play.google.com/store/apps/detai
 Procedures to grant Galaxy Max Hz App WRITE_SECURE_SETTINGS permission using ADB:
 ----------------------
 
-### 1. Enable developer mode
+### 1. Enable developer mode in phone's settings
 
  * Go to `Settings` > `About phone` > `Software information` and tap `Build number` multiple times until the developer mode is enabled.
 
@@ -46,7 +46,6 @@ Procedures to grant Galaxy Max Hz App WRITE_SECURE_SETTINGS permission using ADB
 
 ### 4. Navigate inside the folder that you extracted (i.e. inside platform-tools_r****-******) from Windows Explorer or Finder(macOS)
 
-----------------------
 
 ### 5. Opening the command-line interface
 
@@ -92,8 +91,11 @@ Procedures to grant Galaxy Max Hz App WRITE_SECURE_SETTINGS permission using ADB
 
  * Go to `Settings` > `Developer options`, scroll down a page and **disable** `USB debugging` option.
 
-### 9. Re-open Galaxy Max Hz. Done! 
-
 **That's it!**
+
+----------------------
+
+Re-open Galaxy Max Hz. Done! 
+
 
 You don't have to repeat this process unless you completely uninstall the app and reinstall it.
