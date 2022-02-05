@@ -20,7 +20,7 @@ For **non-rooted** devices using [LADB](https://play.google.com/store/apps/detai
 
 ----------------------
 
-Procedures to grant Galaxy Max Hz App WRITE_SECURE_SETTINGS permission using ADB:
+Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB:
 ----------------------
 
 ### 1. Enable developer mode in phone's settings
