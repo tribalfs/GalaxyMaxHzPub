@@ -66,17 +66,16 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
  **Without this, you will get `adb: command not found` errors.**
 
 
-### 6. Connect your phone to your computer
+### 6. Connecting your phone to your computer
 
  * Your phone will prompt `Allow USB debugging` if it's the first time being connected on USB debugging mode.  Tap `OK`.
 ![adb prompt](adb_prompt.jpg)
 
-
-### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
-
- * Enter the following to the command followed by an enter. It should show your device ID if successfully connected.
+ * Check the connection by entering the following command followed by an enter. It should show your device ID if successfully connected.
 
  ```adb devices```
+ 
+### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
 
  * When successfully connected, enter the following to the command followed by an enter.  If the command executed properly, it'll return blank.
 
