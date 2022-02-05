@@ -69,6 +69,8 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 ### 6. Connecting your phone to your computer
 
  * Your phone will prompt `Allow USB debugging` if it's the first time being connected on USB debugging mode.  Tap `OK`.
+
+
 ![adb prompt](adb_prompt.jpg)
 
  * Check the connection by entering the following command followed by an enter. It should show your device ID if successfully connected.
