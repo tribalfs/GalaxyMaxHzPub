@@ -82,7 +82,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
  
 ### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
 
- * When successfully connected, enter the following to the command followed by an enter.  If the command executed properly, it'll return blank.
+ * When successfully connected, enter the following command and press enter.  If the command is executed properly, it will return blank.
 
  ```adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS```
 
