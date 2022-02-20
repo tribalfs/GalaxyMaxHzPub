@@ -9,16 +9,6 @@ Some features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in orde
 
 ----------------------
 
-Alternative methods:
-
-For **rooted** devices without using a PC:
- *  Install a terminal emulator app from play store (e.g. [Termux](https://play.google.com/store/apps/details?id=com.termux)), grant root permission and run the following command: `su -c pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`.
-or (2) Install this [mini-app](https://github.com/tribalfs/gmhWriteSecureSettings/releases), grant root permission and run.
-
-For **non-rooted** devices using [LADB](https://play.google.com/store/apps/details?id=com.draco.ladb) app:
- * Execute `pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
-
-----------------------
 
 Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB:
 ----------------------
@@ -101,5 +91,12 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
 Re-open Galaxy Max Hz. Done! 
 
+----------------------
+Alternative method:
+If you are  [LADB](https://play.google.com/store/apps/details?id=com.draco.ladb) app:
+ * Execute `pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
+
+----------------------
 
 You don't have to repeat this process unless you completely uninstall the app and reinstall it.
+
