@@ -100,3 +100,9 @@ If you are  [LADB](https://play.google.com/store/apps/details?id=com.draco.ladb)
 
 You don't have to repeat this process unless you completely uninstall the app and reinstall it.
 
+---------------------
+
+[FAQs]
+If you have any question or need more help, you may message us at tribalfs@gmail.com, in [XDA](https://forum.xda-developers.com/conversations/add?to=tribalfs) or ask in the dedicated thread for your device in XDA forum
+---------------------
+
