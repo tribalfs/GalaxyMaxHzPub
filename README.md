@@ -93,7 +93,7 @@ Re-open Galaxy Max Hz. Done!
 
 ----------------------
 Alternative method:
-If you are  [LADB](https://play.google.com/store/apps/details?id=com.draco.ladb) app:
+If you are using [LADB](https://play.google.com/store/apps/details?id=com.draco.ladb) app:
  * Execute `pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
 
 ----------------------
