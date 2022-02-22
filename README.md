@@ -102,7 +102,9 @@ You don't have to repeat this process unless you completely uninstall the app an
 
 ---------------------
 
-[FAQs]
+[FAQs](https://forum.xda-developers.com/t/app-galaxy-max-hz-refresh-rate-mods-screen-off-mods-qs-tiles-tasker-support-and-more.4181447/post-83785135)
+---------------------
+
 If you have any question or need more help, you may message us at tribalfs@gmail.com, in [XDA](https://forum.xda-developers.com/conversations/add?to=tribalfs) or ask in the dedicated thread for your device in XDA forum
 ---------------------
 
