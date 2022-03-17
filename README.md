@@ -8,7 +8,7 @@ Some features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in orde
  * Run `adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS`
 
 ----------------------
-[Video guide](https://youtu.be/gV7ZLz_HE38)
+[Video guide](https://youtu.be/5lFPUqMC-Bc)
 ----------------------
 
 Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB:
