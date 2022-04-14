@@ -71,7 +71,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
  
  ![adb_devices](adb_devices.png)
  
- * If your device fails to connect to your computer, your computer is possibly missing the USB driver for your device. For Samsung smartphones, you need to manually install [Samsung USB driver](https://developer.samsung.com/android-usb-driver) or [Samsung Dex for PC](https://www.samsung.com/us/explore/dex). Once installed, reboot your PC and redo step no. 6
+ * If your device fails to connect to your computer, your computer is possibly missing the USB driver for your device. For Samsung smartphones, you can install [Samsung USB driver](https://developer.samsung.com/android-usb-driver) or [Samsung Dex for PC](https://www.samsung.com/us/explore/dex). Once installed, reboot your PC and redo step no. 6
  
  
 ### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
