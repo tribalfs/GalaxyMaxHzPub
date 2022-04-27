@@ -1,9 +1,8 @@
 
 # Galaxy Max Hz Premium Features
 
-* Keep High/Adaptive motion smoothness when power saving mode is enabled whether manually or by the system/adaptive power saving.***
-  Note: May not work on some devices which are updated to OneUI4.\*. 
-  Confirmed working on the following OneUI4.\* devices: S22 series, S21 series, S21FE, S20 series, S20FE, A5 and A7.  
+* Keep High/Adaptive motion smoothness when power saving mode is enabled whether manually or by the system/adaptive power saving.***  
+Note: May not work on some devices which are updated to OneUI4.\*.  Test first.
 
  * Enable Adaptive Refresh Rate Mod for devices supporting multiple refresh rates but do not have the stock Adaptive motion smoothness (e.g. S20 series, S20FE, S21FE, A5, A7,   TabS7/S7+) with the ability to set the brightness threshold for its activation***
 
