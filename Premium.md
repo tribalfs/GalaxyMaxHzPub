@@ -1,13 +1,15 @@
 
 # Galaxy Max Hz Premium Features
 
-* Keep High/Adaptive motion smoothness when power saving mode is enabled whether manually or by the system/adaptive power saving (Note: Starting OneUI 4.0 samsung already blocked this on some device)***
+* Keep High/Adaptive motion smoothness when power saving mode is enabled whether manually or by the system/adaptive power saving.***
+  Note: May not work on some devices which are updated to OneUI4.\*. 
+  Confirmed working on the following OneUI4.\* devices: S22 series, S21 series, S21FE, S20 series, S20FE, A5 and A7.  
 
- * Adaptive refresh rate mod for devices supporting multiple refresh rates but do not have the stock Adaptive motion smoothness (e.g. S20 series, S20FE, TabS7/S7+) with the ability to set the brightness threshold for its activation***
+ * Enable Adaptive Refresh Rate Mod for devices supporting multiple refresh rates but do not have the stock Adaptive motion smoothness (e.g. S20 series, S20FE, S21FE, A5, A7,   TabS7/S7+) with the ability to set the brightness threshold for its activation***
 
  * Quick-doze mod: Quickly enter doze mode during screen-off that can not be interrupted by motion ***
 
- * Set minimum refresh rate for adaptive mode to 60hz or lower (if supported)***
+ * Override minimum refresh rate for adaptive mode to lower one (if available on the device)***
 
  * Resolution switcher filter: Filter what screen resolutions to include for the resolution switcher QS tile.
 
