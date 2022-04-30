@@ -19,13 +19,13 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  * Go to `Settings` > `About phone` > `Software information` and tap `Build number` multiple times until the developer mode is enabled.
 
-![about phone](about_phone.png)
+![about phone](about_phone2.jpg)
 
 ### 2. Enable USB debugging
 
  * Go to `Settings` > `Developer options` (can be `Settings` > `System` > `Developer options` on older android versions), scroll down and find `USB debugging` option.
 
-![adb](adb.png)
+![adb](usb_debugging2.jpg)
 
 ### 3. Download ADB on your computer
 
@@ -63,17 +63,18 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
  * Your phone will prompt `Allow USB debugging` if it's the first time being connected on USB debugging mode.  Tap `OK`.
 
 
-![adb prompt](adb_prompt.jpg)
+![adb prompt](usb_debugging_prompt.jpg)
 
  * Check the connection by entering the following command followed by an enter. It should show your device ID if successfully connected.
 
  ```adb devices```
  
- ![adb_devices](adb_devices.png)
+ ![adb_devices](adb_devices2.png)
  
- * If your device fails to connect to your computer, your computer is possibly missing the USB driver for your device. For Samsung smartphones, you can install [Samsung USB driver](https://developer.samsung.com/android-usb-driver) or [Samsung Dex for PC](https://www.samsung.com/us/explore/dex). Once installed, reboot your PC and redo step no. 6.  
-Other connection failure troubleshooting you can try: restarting the computer, turning off & turning on again USB debugging on your phone, connecting to a different USB port of your computer and try using a different usb 'data' cable.
+ For macOS:  ```./adb devices ```
  
+ *  If your device fails to connect to your computer, try connecting it a different USB port and/or using a different USB data cable. If still not connecting, your computer is possibly missing the USB driver for your phone. Check [here to download OEM USB drivers](https://developer.android.com/studio/run/oem-usb#Drivers). Once installed, reboot your PC and redo step no. 6. 
+
  
 ### 7. Actual granting of WRITE_SECURE_SETTINGS permission to Galaxy Max Hz
 
@@ -81,8 +82,9 @@ Other connection failure troubleshooting you can try: restarting the computer, t
 
  ```adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS```
 
-![write_secure_settings](write_secure_settings.png)
+![write_secure_settings](write_secure_settings2.png)
 
+For macOS: ```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 ### 8. You may now disable the USB debugging settings
 
