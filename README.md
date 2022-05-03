@@ -84,7 +84,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
 ![write_secure_settings](write_secure_settings2.png)
 
-For macOS: ```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
+For macOS: ```./adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS ```
 
 ### 8. You may now disable the USB debugging settings
 
