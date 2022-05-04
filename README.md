@@ -94,9 +94,6 @@ For macOS: ```./adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SEC
 
 **That's it!**
 
-----------------------
-
-Re-open Galaxy Max Hz. Done! 
 
 ----------------------
 Alternative method:
