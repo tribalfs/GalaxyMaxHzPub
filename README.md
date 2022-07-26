@@ -4,3 +4,6 @@ Some features of Galaxy Max Hz need **WRITE_SECURE_SETTINGS** permission in orde
 
 
 [How to grant WRITE_SECURE_SETTINGS](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-grant-WRITE_SECURE_SETTINGS)
+
+
+[Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
