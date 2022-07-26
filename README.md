@@ -19,13 +19,13 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  * Go to `Settings` > `About phone` > `Software information` and tap `Build number` multiple times until the developer mode is enabled.
 
-![about phone](about_phone2.jpg)
+![about phone](about_phone.jpg)
 
 ### 2. Enable USB debugging
 
  * Go to `Settings` > `Developer options` (can be `Settings` > `System` > `Developer options` on older android versions), scroll down and find `USB debugging` option.
 
-![adb](usb_debugging2.jpg)
+![adb](usb_debugging.jpg)
 
 ### 3. Download ADB on your computer
 
@@ -69,7 +69,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  ```adb devices```
  
- ![adb_devices](adb_devices2.png)
+ ![adb_devices](adb_devices.png)
  
  For macOS:  ```./adb devices ```
  
@@ -82,7 +82,7 @@ Procedures to grant Galaxy Max Hz the WRITE_SECURE_SETTINGS permission using ADB
 
  ```adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS```
 
-![write_secure_settings](write_secure_settings2.png)
+![write_secure_settings](write_secure_settings.png)
 
 For macOS: ```./adb shell pm grant com.tribalfs.gmh android.permission.WRITE_SECURE_SETTINGS ```
 
