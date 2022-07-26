@@ -1,13 +1,13 @@
 ---
-name: Bug report
+name: Bug report template
 about: Create a report to help us improve
-title: ''
+title: "[BUG]"
 labels: ''
 assignees: ''
 
 ---
 
-**Important: Before submitting a bug, ensure to check [FAQs](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/FREQUENTLY-ASK-QUESTIONS-(FAQs))  and app description in the appropriate XDA forum thread opening post for your device  to ensure that the behavior is not expected or not part of the limitation of the app.**
+**Important: Before submitting a bug, ensure to check [FAQs](FAQs)](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/FREQUENTLY-ASK-QUESTIONS-(FAQs))  and in the app description in the appropriate XDA forum thread for your device to ensure that the behavior is not expected or not part of the limitation of the app.**
 
 **Describe the bug**
 A clear and concise description of what the bug is.
