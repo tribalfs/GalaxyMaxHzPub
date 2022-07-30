@@ -13,7 +13,8 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **To Reproduce**
-A. The exact settings in GMH
+
+A. GMH version and the exact settings in GMH
 
 B. Steps to reproduce the behavior:
 1. Go to '...'
