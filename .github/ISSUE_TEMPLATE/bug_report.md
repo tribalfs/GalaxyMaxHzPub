@@ -32,6 +32,7 @@ If applicable, please include screenshots and/or [screen recording](https://play
  - Model Number: [e.g. SM-S908B]
  - OS/OneUI version:  [e.g. android12 OneUI4.1]
  - Date of latest security update, if applicable: [e.g. June 2022]
+ - Stock or modded ROM?
 
 **Additional context**
 Add any other context about the problem here.
