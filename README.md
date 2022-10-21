@@ -43,7 +43,7 @@ Galaxy MaxHz[^2]
 * Auto SENSORS OFF (experimental non-root workaround)
    * Device sensors will automatically turn off while screen is off until the device is unlocked to help minimize battery-draining motion-triggered wakelocks while device is not being used [premium]
    * Tasker plug-in support
-   * Supports up to OneUI4 only
+   * Note: Supports up to OneUI4 only
 
 
 #### Extras
