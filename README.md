@@ -68,4 +68,4 @@ Galaxy MaxHz[^2]
 
 [^2]: [Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
 
-[Note for modified ROM users](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/Frequently-Asked-Questions-(FAQs)#4-i-have-a-modified-rom-will-this-app-work)
+Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication.
