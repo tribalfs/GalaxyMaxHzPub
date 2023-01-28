@@ -67,3 +67,5 @@ Galaxy MaxHz[^2]
 
 
 [^2]: [Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
+
+[Note for modified ROM users](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/Frequently-Asked-Questions-(FAQs)#4-i-have-a-modified-rom-will-this-app-work)
