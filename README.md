@@ -8,6 +8,7 @@ Galaxy MaxHz[^2]
 * Change default refresh rates
    * Easily change the overall refresh rate settings of devices supporting multiple refresh rates.
    * Set supported mid refresh rates as the maximum refresh rate limit for battery savings (e.g. 96hz instead of 120Hz).
+   * Set refresh rates for low battery state.
    * Quick settings shortcut
    * Tasker plugin support
 
