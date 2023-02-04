@@ -22,7 +22,7 @@ Galaxy MaxHz[^2]
 * Keep selected refresh rate mode on power saving mode [premium]
    * Prevent system from switching to Standard mode when power saving mode is enabled
    * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported Samsung smartphones.
-      (not working on all devices with OneUI4.**+, test first). [^1]
+      (not working on all devices with OneUI4.**+, test first). [^1] Devices with OneUI5.* and those few with OneUI4.* require extra steps[^3]
 
 
 #### Screen-off Mods:
@@ -67,5 +67,11 @@ Galaxy MaxHz[^2]
 
 
 [^2]: [Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
+
+[^3]: Extra steps required for some devices.  After selecting Adaptive or High mode while on power saving mode, either:
+       - Do a dummy (fake) video call to any number using the [native video call app](https://user-images.githubusercontent.com/65062033/216779623-7e7d78f1-e6cc-421a-8ab3-02f1d2712dec.png) (not google duo; availability depends on SIM/mobile plan support) OR
+       - Connect and disconnect to a wifi display receiver (e.g. smart tv, chromecast, windows laptops) using the Smart View function OR
+       - Connect and disconect to Samsung Dex on TV using an HDMI cable or Samsung Dex on PC using USB data cable. Connect the phone and confirm "Start now" prompt and disconnect once Samsung Dex has started. 
+ 
 
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication.
