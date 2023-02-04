@@ -1,5 +1,5 @@
 
- <img src="https://forum.xda-developers.com/attachments/screenshot_20220819-102810_galaxy-maxhz-jpg.5689917" width=235 height=480><img src="https://forum.xda-developers.com/attachments/screenshot_20220819-102819_galaxy-maxhz-jpg.5689919" width=235 height=480><img src="https://forum.xda-developers.com/attachments/screenshot_20220819-102912_galaxy-maxhz-jpg.5689921" width=235 height=480>
+<img src="https://user-images.githubusercontent.com/65062033/216784714-c7182db7-6b6c-43c8-bf1b-66b15247ec4e.png" width=235 height=480> <img src="https://user-images.githubusercontent.com/65062033/216784718-83153bf4-9a8f-4dec-8e67-3c922ed803fe.png" width=235 height=480> <img src="https://user-images.githubusercontent.com/65062033/216784711-233fd3ba-5011-4a0f-b1f7-829018660dcd.png" width=235 height=480>
 
 Galaxy MaxHz[^2]
 ======
