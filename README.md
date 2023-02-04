@@ -35,7 +35,7 @@ Galaxy MaxHz[^2]
 
 * Auto power saving mode on screen-off[^1]
 
-* Auto disable Autosync[^1]
+* Auto disable Autosync
 
 * Quick-doze mod
    * Quickly enter doze mode during screen-off that can not be interrupted by motion to improve standby power consumption[premium][^1]
