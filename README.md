@@ -49,7 +49,7 @@ Galaxy MaxHz[^2]
 
 #### Extras
 
-* Battery protection mod
+* Battery protection mod [Experimental]
    * Option to set maximum charge to 86%-95%(for OneUI4+)[premium]
 
 * Quick resolution switcher[^1]
