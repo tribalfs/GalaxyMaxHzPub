@@ -64,6 +64,9 @@ Galaxy MaxHz[^2]
 * Statusbar net speed indicator
 
 
+
+
+
 [^1]: These marked features of Galaxy Max Hz need [**WRITE_SECURE_SETTINGS**](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-grant-WRITE_SECURE_SETTINGS) permission in order to work. 
 
 
@@ -76,3 +79,5 @@ Galaxy MaxHz[^2]
  
 
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication.
+
+##### Only Samsung devices are officially supported. Features may or may not work on other devices.
