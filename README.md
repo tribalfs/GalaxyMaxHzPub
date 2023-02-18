@@ -74,8 +74,16 @@ Galaxy MaxHz[^2]
 
 [^3]: Extra steps required for some devices.  After selecting Adaptive or High mode while on power saving mode, either:
        - Do a dummy (fake) video call to any number using the [native video call app](https://user-images.githubusercontent.com/65062033/216779623-7e7d78f1-e6cc-421a-8ab3-02f1d2712dec.png) (not google duo; availability depends on SIM/mobile plan support) OR
+       - Game booster method. First, open Game Booster settings and ensure "Save power during touch protection" is turned on AND "Shortcut bar" is tuned on OR "Floating shortcut" is set to Touch Protection.
+       Here are the steps:
+        1. Select Adaptive Mode while on power saving mode
+        2. Open any game (preferably from game launcher)
+        3. Press the touch protection button (lock icon) in the floating shortcut bar and wait for the screen to dim ("Drag lock icon to unlock" text will fade)
+        4. Touch the screen and unlock
+
        - Connect and disconnect to a wifi display receiver (e.g. smart tv, chromecast, windows laptops) using the Smart View function OR
        - Connect and disconect to Samsung Dex on TV using an HDMI cable or Samsung Dex on PC using USB data cable. Connect the phone and confirm "Start now" prompt and disconnect once Samsung Dex has started. 
+
  
 
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication.
