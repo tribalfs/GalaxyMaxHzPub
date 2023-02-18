@@ -90,4 +90,4 @@ Note for modified ROM users: The app may or may not work depending on app's depe
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
 
-[Contact developer](mailto:tribalfs@gmail.com)
+[Contact developer](mailto:tribalfs@gmail.com?subject=[GitHub]%20Galaxy%20MaxHz)
