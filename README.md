@@ -86,7 +86,7 @@ Galaxy MaxHz[^2]
 
  
 
-Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication.
+Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication. Also, do not restore app from backup, always fresh install.
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
 
