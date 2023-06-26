@@ -22,8 +22,8 @@ Galaxy MaxHz[^2]
 
 * Keep selected refresh rate mode on power saving mode [premium]
    * Prevent system from switching to Standard mode when power saving mode is enabled
-   * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported Samsung smartphones.
-      (not working on all devices with OneUI4.**+, test first). [^1] Devices with OneUI5.* and those few with OneUI4.* require extra steps[^3]
+   * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported Samsung smartphones [^1].
+      Devices with OneUI5.* and those few with OneUI4.* require extra steps[^3] except when rooted with Magist and LSPosed module installed.
 
 
 #### Screen-off Mods:
