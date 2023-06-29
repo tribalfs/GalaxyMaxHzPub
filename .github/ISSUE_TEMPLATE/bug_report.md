@@ -38,7 +38,9 @@ If applicable, please include screenshots and/or [screen recording](https://play
 Add any other context about the problem here.
 
 **Crashlog**
-If GMH crashes on your device, please include the crashlog of your device.  Just execute the following adb command.  Do this right after the crash (device must not be rebooted yet):
+If GMH crashes on your device, please include the crashlog of your device.  Just execute the following adb command. 
+`adb logcat -c`.  
+Then reproduce the crash.   Then execute this right after the crash (device must not be rebooted yet):
 `adb logcat -b crash > crashlog.txt`
 _Ctrl+C_ after 10seconds.
 Then locate _crashlog.txt_ file in your adb installation folder then send it to tribalfs@gmail.com.
