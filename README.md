@@ -88,8 +88,11 @@ Galaxy MaxHz[^2]
 
  
 
+
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (Build.MODEL) will cause bugs on the app including the license verfication. Also, do not restore app from backup, always fresh install.
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
+###### **Note for OneUI6.0 (Android14)** :  Starting OneUI6.0, installing the app on OneUi6.0 requires doing  it via ADB using this command:
+`adb install --bypass-low-target-sdk-block galaxy_max_hz_v8.1.apk`
 
 [Contact developer](mailto:tribalfs@gmail.com?subject=[GitHub]%20Galaxy%20MaxHz)
