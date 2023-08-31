@@ -75,7 +75,7 @@ Galaxy MaxHz[^2]
 [^3]: Extra steps required for some devices.  After selecting Adaptive or High mode while on power saving mode, either:
        - Do a dummy (fake) video call to any number using the [native video call app](https://user-images.githubusercontent.com/65062033/216779623-7e7d78f1-e6cc-421a-8ab3-02f1d2712dec.png) (not google duo; availability depends on SIM/mobile plan support) OR
        
-       - Game booster method. First, open Game Booster settings and ensure "Save power during touch protection" is turned on AND "Shortcut bar" is tuned on OR "Floating shortcut" is set to Touch Protection.
+       - Game booster method. First, open Game Booster settings and ensure "Save power during touch protection" is turned on AND "Shortcut bar" is also turned on OR "Floating shortcut" is set to Touch Protection.
        Here are the steps:
         1. Select Adaptive Mode while on power saving mode
         2. Open any game (preferably from game launcher)
