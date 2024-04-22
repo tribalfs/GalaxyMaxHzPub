@@ -11,19 +11,20 @@ Galaxy MaxHz[^2]
    * Set refresh rates for low battery state.
    * Quick settings shortcut
    * Tasker plugin support
+   * Configure separate default refresh rates when folded for supported samsung z-fold [premium]
 
 * Refresh rate mode switcher(Normal, Adaptive or High)[^1]
    * Set you device motion smoothness mode to stationary refresh rates (high mode) for better smoothness if so desired on Samsung devices with native Adaptive motion smoothness with a little trade-off to the battery.
-   * Apply adaptive refresh rate mod on device that don't natively support adaptive refresh rate mode [premium][^1]
+   * Adaptive refresh rate mod on devices that don't natively support adaptive refresh rate mode [premium][^1]
    * Tasker plugin support
 
 * Per-app refresh rate settings:
-   * Set different refresh rate settings for every app to either adaptive or static [premium].
+   * Configure different refresh rate settings for different apps, either adaptive or static [premium].
 
 * Keep selected refresh rate mode on power saving mode [premium]
    * Prevent system from switching to Standard mode when power saving mode is enabled
    * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported Samsung smartphones [^1].
-      Devices with OneUI5+ and those few with OneUI4.* require extra steps[^3] except when rooted with Magist and LSPosed module installed.
+     Devices with OneUI5+ and those few with OneUI4.* require extra steps[^3] except when rooted with Magisk and using Xposed/LSPosed module.
 
 
 #### Screen-off Mods:
@@ -49,19 +50,24 @@ Galaxy MaxHz[^2]
 
 #### Extras
 
-* Battery protection mod
-   * Option to set maximum charge to 86%-95%(for OneUI4+)[premium]
+* Battery protection mod [premium] (for OneUI4+)
+   * Option to set different maximum charge limit other than stock limit 
+   * Option to set scheduled maximum charge limits
 
+* Animation mod[^1]
+  * Easily adjust animation duration and scale 
+  
 * Quick resolution switcher[^1]
    * Easily switch to any supported resolutions using the included quick setting tile
    * Tasker plugin support
-
+  
 
 * Customizable refresh rate monitor
    * Use statusbar or overlay which you can place anywhere on screen.
    * Tasker plugin support
 
 * Statusbar net speed indicator
+  * Quick settings toggle [premium]
 
 
 
@@ -73,14 +79,14 @@ Galaxy MaxHz[^2]
 [^2]: [Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
 
 [^3]: Extra steps required for some devices.  After selecting Adaptive or High mode while on power saving mode, do any of the following methods:
-       - Video call method: Do a dummy (fake) video call to any number using the [native video call app](https://user-images.githubusercontent.com/65062033/216779623-7e7d78f1-e6cc-421a-8ab3-02f1d2712dec.png) (not google duo; availability depends on SIM/mobile plan support);
        
-       - Game booster method (now inside Gaming Hub): First, open Game Booster settings and ensure "Save power during touch protection" is turned on AND "Shortcut bar" is also turned on OR "Floating shortcut" is set to Touch Protection.
-       Here are the steps:
-        1. Select Adaptive Mode while on power saving mode
+       - Fake video call method: Do a quick video call to any (fake) number using the [native video call app](https://user-images.githubusercontent.com/65062033/216779623-7e7d78f1-e6cc-421a-8ab3-02f1d2712dec.png) (not google meet; availability depends on SIM/mobile plan support);
+       
+       - Game booster method (now inside Gaming Hub): 
+        1. Open Game Booster settings and ensure "Save power during touch protection" is turned on AND "Shortcut bar" is also turned on OR "Floating shortcut" is set to Touch Protection.
         2. Open any game (preferably from game launcher)
         3. Press the [touch protection button](https://forum.xda-developers.com/attachments/1676681590219-png.5839707/)(lock icon) in the floating shortcut bar and wait for the screen to dim ("Drag lock icon to unlock" text will fade)
-        4. Touch the screen and unlock;
+        4. Touch the screen again and unlock;
 
        - SmartView Method: Connect and disconnect to a wifi display receiver (e.g. smart tv, chromecast, windows laptops) using the SmartView function; OR
        
@@ -89,7 +95,9 @@ Galaxy MaxHz[^2]
  
 
 
-Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (ro.product.vendor.model) will cause bugs on the app including the license verfication. Also, do not restore app from backup, always fresh install.
+Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (ro.product.vendor.model) will cause bugs on the app including the license verification. 
+Also, do not restore app from backup, always fresh install.
+
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
 
