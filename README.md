@@ -93,10 +93,11 @@ Galaxy MaxHz[^2]
        - Dex Method: Connect and disconect to Samsung Dex on TV using an HDMI cable or Samsung Dex on PC using USB data cable. Connect the phone and confirm "Start now" prompt and disconnect once Samsung Dex has started. 
 
  
-
-
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (ro.product.vendor.model) will cause bugs on the app including the license verification. 
 Also, do not restore app from backup, always fresh install.
+
+Info:
+This app targets older android sdk in order to control refresh rates without ADB setup or root. Just tap OK the dialog that says "This app was built for an older version of Android...." when opened for the first time. If OK button is not visible, just tap the blank space on the lowest portion of the dialog.
 
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
