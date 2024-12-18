@@ -90,7 +90,7 @@ Galaxy MaxHz[^2]
 
        - SmartView Method: Connect and disconnect to a wifi display receiver (e.g. smart tv, chromecast, windows laptops) using the SmartView function; OR
        
-       - Dex Method: Connect and disconect to Samsung Dex on TV using an HDMI cable or Samsung Dex on PC using USB data cable. Connect the phone and confirm "Start now" prompt and disconnect once Samsung Dex has started. 
+       - Dex Method: Connect and disconnect to Samsung Dex on TV using an HDMI cable or Samsung Dex on PC using USB data cable. Connect the phone and confirm "Start now" prompt and disconnect once Samsung Dex has started. 
 
  
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified. Tweaks that modify the device model number in the build prop (ro.product.vendor.model) will cause bugs on the app including the license verification. 
