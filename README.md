@@ -21,10 +21,10 @@ Galaxy MaxHz[^2]
 * Per-app refresh rate settings:
    * Configure different refresh rate settings for different apps, either adaptive or static [premium].
 
-* Keep selected refresh rate mode on power saving mode [premium]
+* Prevent switching to Standard mode on power saving mode [premium]
    * Prevent system from switching to Standard mode when power saving mode is enabled
    * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported Samsung smartphones [^1].
-     Devices with OneUI5+ and those few with OneUI4.* require extra steps[^3] except when rooted with Magisk and using Xposed/LSPosed module.
+     Devices with OneUI5.* , OneUI6.* and those few with OneUI4.* require extra steps[^3] except when rooted with Magisk and using Xposed/LSPosed module.
 
 
 #### Screen-off Mods:
@@ -51,8 +51,9 @@ Galaxy MaxHz[^2]
 #### Extras
 
 * Battery protection mod [premium] (for OneUI4+)
-   * Option to set different maximum charge limit other than stock limit 
-   * Option to set scheduled maximum charge limits
+   * Option to set different maximum charge limit other than stock limit
+   * Option to enable pass-through (battery by-pass) on supported models.
+   * Option to sscheduled maximum charge limits and/or pass-through mode.
 
 * Animation mod[^1]
   * Easily adjust animation duration and scale 
