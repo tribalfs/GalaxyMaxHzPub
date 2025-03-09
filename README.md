@@ -103,6 +103,6 @@ This app targets older android sdk in order to control refresh rates without ADB
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
 
-#### [Important Notes for installing it on OneUI6.0(Android14) and above](https://github.com/tribalfs/GalaxyMaxHzPub/releases#:~:text=is%20already%20shown.-,Installation%20Notes%20for%20OneUI6.0%20(Android14)%3A,your%20device%20internal%20storage%20and%20execute%20the%20above%20provided%20ADB%20command.,-Assets)
+#### [Important Notes for installing it on OneUI6.0(Android14) and above](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-install-on-OneUI6(Android-14)-and-above)
 
 [Contact developer](mailto:tribalfs@gmail.com?subject=[GitHub]%20Galaxy%20MaxHz)
