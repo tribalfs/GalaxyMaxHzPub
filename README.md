@@ -76,8 +76,6 @@ Galaxy MaxHz[^2]
 
 * Keep force resizable activites[^1]
 
-* Re-enable wifi sharing (hotspot source)[^1]
-
 * Animation mod[^1]
 
 * Quick resolution switcher[^1]
