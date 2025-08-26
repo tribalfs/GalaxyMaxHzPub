@@ -9,90 +9,70 @@ Galaxy MaxHz[^2]
 
 #### Refresh Rate Mods
 
-* Change default refresh rates
-    * Easily change the overall refresh rate settings of devices supporting multiple refresh rates.
-    * Set supported mid refresh rates as the maximum refresh rate limit for battery savings (e.g.
-      96hz instead of 120Hz).
-    * Set refresh rates for low battery state.
-    * Quick settings shortcut[^1]
-    * Tasker plugin support
-    * Configure separate default refresh rates when folded for supported Samsung Galaxy Z Fold
-      devices [premium]
+* Change default refresh rates of devices supporting multiple refresh rates.
+    * Set supported mid refresh rates as the maximum refresh rate limit for battery savings.
+    * Configure separately for Power Saving Mode and Low Battery State, as well as for the main and outer screens on supported foldables [premium]
 
 * Refresh rate mode switcher(Normal, Adaptive or High)[^1]
-    * Set you device motion smoothness mode to stationary refresh rates (high mode) for better
-      smoothness if so desired on Samsung devices with native Adaptive motion smoothness with a
-      little trade-off to the battery.
-    * Adaptive refresh rate mod on devices that don't natively support adaptive refresh rate
-      mode [premium][^1]
-    * Tasker plugin support
+    * Set you device motion smoothness mode to stationary refresh rates (high mode) for better smoothness if so desired.
+    * Adaptive refresh rate mod on devices that don't natively support adaptive refresh rate  mode [premium][^1]
 
 * Per-app refresh rate settings[premium]:
-    * Configure different refresh rate settings for different apps, either adaptive or static .
-    * Separate settings can be set for inner and outer screen for supported Samsung Galaxy Z Fold
-      devices.
+    * Assign adaptive or static refresh rates per app.
+    * Configure individually for main screen and outer screens on supported foldables.
+      
+* Refresh rate monitor
 
 * Prevent switching to Standard mode on power saving mode [premium]
     * Prevent system from switching to Standard mode when power saving mode is enabled
     * Enforce CPU speed limit on Power Saving Mode even with Adaptive/High mode (OneUI7+)
-    * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM)
-      on supported Samsung smartphones[^1].
+    * GMH will automatically apply a workaround to bypass 60Hz limitation on Power Saving Mode (PSM) on supported devices.
 
-      _Devices with OneUI5/OneUI6 and those few with OneUI4.* require extra steps, except when using
-      the Xposed/LSPosed module._
+      _Devices with OneUI5/OneUI6 and those few with OneUI4.* require extra steps, except when rooted and using the Xposed/LSPosed module._
 
+* Screen off/AOD refresh rate
+    * Force the lowest supported refresh rate on screen-off or Always-On Display(AOD) to improve standby power consumption a bit.
+ 
+      
 #### Screen-off Mods:
 
-* Screen off/AOD refresh rate (Force to Lowest Hz)
-    * Force the lowest refresh rate on screen-off or Always-On Display(AOD) to improve standby power
-      consumption a bit.
-    * Select refresh rate to set for AOD/screen-off[premium]
-    * Tasker plugin support.
-
 * Auto power saving mode on screen-off[^1]
-
+    *  Auto enable power saving mode when the screen is off, and disable it when the screen turns back on.
+  
 * Auto disable Autosync
+  *  Auto disable Autosync when the screen is off, and disable it when the screen turns back on
 
 * Quick-doze mod[^1]
-    * Quickly enter doze mode during screen-off that can not be interrupted by motion to improve
-      standby power consumption[premium]
-    * Tasker plugin support
-
+    * Quickly enter doze mode to improve standby drain with customizable maintenance interval [premium]
+    * Remove apps from Doze system whitelist to allow system to restrict or optimize their background/standby usage.
+ 
 * Auto SENSORS OFF (Supports up to OneUI4 only)
-    * Device sensors will automatically turn off while screen is off until the device is unlocked to
-      help minimize battery-draining motion-triggered wakelocks while device is not being
-      used [premium]
-    * Tasker plug-in support
 
 #### Extras
 
 * Battery protection mod[premium][^1] (for OneUI4+)
     * Option to set different maximum charge limit other than stock limit
-    * Option to enable pass-through (battery by-pass) on supported models.
-    * Option to sscheduled maximum charge limits and/or pass-through mode.
+    * Pass-through mode (battery by-pass) with customizable threshold on supported models.
+    * Option to scheduled maximum charge limits and/or pass-through.
 
 * Animation mod[^1]
     * Easily adjust animation duration and scale
 
 * Keep force resizable activites[^1]
 
-* Animation mod[^1]
-
 * Quick resolution switcher[^1]
     * Easily switch to any supported resolutions using the included quick setting tile
-    * Tasker plugin support
-
-
-* Customizable refresh rate monitor
-    * Use statusbar or overlay which you can place anywhere on screen.
-    * Tasker plugin support
 
 * Statusbar net speed indicator
     * Quick settings toggle [premium][^1]
 
+#### Integrations
+
+* Tasker
+* App shortcuts
+
 [^1]: These marked features of Galaxy Max Hz need [**WRITE_SECURE_SETTINGS
-**](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-grant-WRITE_SECURE_SETTINGS) permission
-in order to work.
+**](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-grant-WRITE_SECURE_SETTINGS) permission in order to work on non-rooted device. This can be granted automatically on rooted device.
 
 
 [^2]: [Downloads](https://github.com/tribalfs/GalaxyMaxHzPub/releases)
