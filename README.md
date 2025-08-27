@@ -1,7 +1,10 @@
-<img src="https://github.com/user-attachments/assets/99a71252-8697-47b5-a1e5-1dd1884e1f3f" width=235 height=480> <img src="https://github.com/user-attachments/assets/d157a94b-2899-4f01-9f21-4c145ebc5ba4" width=235 height=480> <img src="https://github.com/user-attachments/assets/8b2a09dc-1a62-4950-81bb-b5ca8255a002" width=235 height=480> 
 
-<img src="https://github.com/user-attachments/assets/a1503018-e6df-4868-8916-afb7c9a3bd08" width=235 height=480> <img src="https://github.com/user-attachments/assets/447365df-8493-4de9-8a00-d997c5f8b715" width=235 height=480> 
-<img src="https://github.com/user-attachments/assets/66519a55-7720-419b-ae4b-5fc7953c2885" width=235 height=480> 
+<img src="https://github.com/user-attachments/assets/cbdb6b14-796f-49ae-b9ea-93e4df01aedc" width=235 height=490>
+<img src="https://github.com/user-attachments/assets/ec56fa22-1242-4ff2-a2e6-bbf79600d77c" width=235 height=490>
+<img src="https://github.com/user-attachments/assets/fc7155c4-6061-4742-9753-12cf37bda9ca" width=235 height=490> 
+<img src="https://github.com/user-attachments/assets/249ef1b6-08a5-4635-b73d-7bfc448c7554" width=235 height=490>
+<img src="https://github.com/user-attachments/assets/caf28d24-53a9-4289-ba14-0e480d940261" width=235 height=490> 
+<img src="https://github.com/user-attachments/assets/7323029e-54b4-4478-835c-0a67bdc48932" width=235 height=490>
 
 
 Galaxy MaxHz[^2]
@@ -81,8 +84,7 @@ Galaxy MaxHz[^2]
 
 Note for modified ROM users: The app may or may not work depending on app's dependencies modified.
 Tweaks that modify the device model number in the build prop (ro.product.vendor.model) will cause
-bugs on the app including the license verification.
-Also, do not restore app from backup, always fresh install.
+bugs on the app including the license verification. Also, do not restore app from backup, always fresh install.
 
 Info:
 This app targets older android sdk in order to control refresh rates without ADB setup or root. Just
@@ -92,6 +94,6 @@ dialog.
 
 ##### Only Samsung devices are officially supported. Features may or may not work on other devices.
 
-#### [Important Notes for installing it on OneUI6.0(Android14) and above](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-install-on-OneUI6(Android-14)-and-above)
+### Installation instructions for [OneUI6.0 (Android14) and above](https://github.com/tribalfs/GalaxyMaxHzPub/wiki/How-to-install-on-OneUI6(Android-14)-and-above)
 
 [Contact developer](mailto:tribalfs@gmail.com?subject=[GitHub]%20Galaxy%20MaxHz)
